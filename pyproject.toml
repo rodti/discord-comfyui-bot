@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "discord-comfyui-bot"
+version = "0.1.0"
+description = "A Discord slash-command bot for ComfyUI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "aiohttp>=3.10,<4",
+  "discord.py>=2.4,<3",
+  "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "pytest-asyncio>=0.24,<1"]
+
+[project.scripts]
+comfyui-discord-bot = "comfyui_discord_bot.bot:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/comfyui_discord_bot"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

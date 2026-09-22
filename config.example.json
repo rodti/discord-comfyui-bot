@@ -1,0 +1,34 @@
+{
+  "discord": {
+    "token": "replace-with-your-discord-bot-token",
+    "guild_id": null
+  },
+  "comfyui": {
+    "url": "http://192.168.1.50:8188",
+    "token": null,
+    "model_bases": {}
+  },
+  "bot": {
+    "poll_interval_seconds": 1,
+    "generation_timeout_seconds": 600,
+    "max_concurrent_jobs": 2
+  },
+  "generation": {
+    "negative_prompt": "blurry, low quality, artifacts",
+    "width": 1024,
+    "height": 1024,
+    "seed": -1,
+    "steps": 30,
+    "cfg_scale": 7.0,
+    "model": null,
+    "lora": null,
+    "sampler": null,
+    "scheduler": null,
+    "strength": null,
+    "upscaling": null,
+    "t5_encoder": null,
+    "clip_encoder": null,
+    "text_encoder": null,
+    "vae": null
+  }
+}

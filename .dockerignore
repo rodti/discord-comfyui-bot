@@ -1,0 +1,7 @@
+.git
+.env
+config.json
+.venv
+__pycache__
+.pytest_cache
+tests
